@@ -1,16 +1,17 @@
 body {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 3rem;
     padding: 1rem;
     background-color: #333;
     color: white;
+    position: fixed;
+    width: 100%;
 }
-
 
 ul {
     list-style-type: none;
@@ -25,7 +26,6 @@ ul {
       
   }
   li {
-   
    display: inline;
     
   }
@@ -41,4 +41,41 @@ ul {
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
+  }
+
+  .aboutme {
+    grid-area: about;
+    z-index: 1;
+    top: 5rem;
+  }
+
+  .me {
+    grid-area: me;
+  }
+
+  .about {
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+      "about me";
+      text-align: center;
+      
+      
+  }
+  
+  img {
+    width: 10rem;
+    height: 12rem;
+    padding: 40% 10%;
+  }
+
+  p {
+    color: black;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    padding: 30% 10%;
+    
   }
