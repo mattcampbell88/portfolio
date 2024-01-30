@@ -61,6 +61,7 @@ ul {
     grid-template-areas:
       "about me";
       text-align: center;
+      height: 30rem;
       
       
   }
@@ -76,6 +77,6 @@ ul {
     z-index: 1;
     align-self: center;
     justify-self: center;
-    padding: 30% 10%;
+    padding: 25% 10%;
     
   }
