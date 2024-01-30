@@ -46,7 +46,7 @@ ul {
   .aboutme {
     grid-area: about;
     z-index: 1;
-    top: 5rem;
+    top: 15rem;
   }
 
   .me {
@@ -80,3 +80,48 @@ ul {
     padding: 25% 10%;
     
   }
+/* This is code for the images of websites I have made. */
+/*
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+#screenshot {
+  width: 100%;
+  height: auto;
+}	
+  
+.text {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+*/
+.container{
+  width: 100%;
+}
+
+.column {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  
+}
+#screenshot {
+  width: 100%;
+  height: auto;
+  background-color: grey;
+  position: relative;
+  
+
+}
+
+.text {
+  display: block;
+  top: 3rem;
+  padding: 10rem;
+  position: relative;
+}
