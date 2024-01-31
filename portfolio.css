@@ -1,16 +1,24 @@
 body {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
 }
 
 header {
-    text-align: center;
+    text-align: left;
     font-size: 3rem;
     padding: 1rem;
-    background-color: #333;
+    background-color: #303030;
     color: white;
     position: fixed;
     width: 100%;
+    opacity: 1;
+    z-index: 2;
+    padding: 2rem;
 }
 
 ul {
@@ -18,13 +26,15 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #303030;
     position: fixed;
     top: 5rem;
     width: 100%;
     text-align: center;
-      
+      z-index: 2;
+      border-bottom: 1px solid #36454f;
   }
+
   li {
    display: inline;
     
@@ -40,9 +50,11 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: darkgray;
+    color: black;
   }
 
+  /* about me section */
   .aboutme {
     grid-area: about;
     z-index: 1;
@@ -54,7 +66,7 @@ ul {
   }
 
   .about {
-    background-color: darkgray;
+    background-color: black;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -62,66 +74,85 @@ ul {
       "about me";
       text-align: center;
       height: 30rem;
-      
-      
   }
   
-  img {
-    width: 10rem;
-    height: 12rem;
+  .me img {
+    width: 15rem;
+    height: auto;
     padding: 40% 10%;
   }
 
-  p {
-    color: black;
+  .aboutme p {
+    color: white;
     z-index: 1;
     align-self: center;
     justify-self: center;
-    padding: 25% 10%;
+    padding: 40% 10%;
+    
     
   }
 /* This is code for the images of websites I have made. */
-/*
-.column {
-  float: left;
-  width: 30%;
-  padding: 5px;
+#projects {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 20rem;
 }
-#screenshot {
-  width: 100%;
-  height: auto;
-}	
+
+.screenshot {
+  width: 300px;
+  height: 200px;
+  padding: 3rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
   
-.text {
-  width: 100%;
-  height: auto;
-  padding: 5px;
+  
 }
 
-*/
-.container{
-  width: 100%;
-}
+/*Blog */
 
-.column {
-  vertical-align: top;
-  display: inline-block;
+#blog h2 {
   text-align: center;
-  width: 45%;
-  
+  text-decoration: underline;
+
 }
-#screenshot {
+#blog {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.blog {
+  border: 1px dotted white;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  background-color: #fffffa;
+  color: black;
   width: 100%;
-  height: auto;
-  background-color: grey;
-  position: relative;
-  
-
+  margin: 0;
+  text-align: left;
+}
+ 
+.footer p {
+  margin-left: 3rem;
 }
 
-.text {
-  display: block;
-  top: 3rem;
-  padding: 10rem;
-  position: relative;
+/* button */
+.button {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
+

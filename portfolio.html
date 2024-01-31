@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./portfolio.css">
+    <script src="./portfolio.js"></script>
     <title>Matthew Campbell</title>
 </head>
 <body>
@@ -11,30 +12,69 @@
     <header> Matthew Campbell</header>
     <nav id="navbar">
         <ul>
-            <li><a href=#aboutme>About Me</a></li>
+            <li><a href=#aboutMe>About Me</a></li>
             <li><a href=#projects>Projects</a></li>
             <li><a href=#blog>Blog</a></li>
             <li><a href=#contact>Contact</a></li>
           </ul>
     </nav>
 
-    <div class="about">
+    <div class="about" id="aboutMe">
         <div class="aboutme"><p>Hi, my name is Matt. After a 10 year career in teaching I decided to take the opportunity to learn a new skill whilst travelling the world. I began learning to code in November of 2023.</p></div>
         <div class="me"><img  src="./images/Matt-baloon.jpg" alt="Matt standing in front of a hot air ballon in Laos."></div>
     </div>
 
     <!--screenshots of the websites i have made so far.-->
-    <div class="container">
-      <div class="column">
-        <img id="screenshot" src="./images/kava.png" alt="Kava website" class="image">
-          <p>This was a static website built using html and css. A mockup of a dream business.</p>
+    <div id="projects">
+        <div>
+          <h2>Projects</h2>
+        </div>
+        <div class="container">
+            <div>
+               <img class="screenshot" id="image" src="./images/kava.png" alt="Kava website" class="image">
+               <p>This was a static website built using html and css. A mockup of a dream business.</p>
+            </div>
+            <div>
+               <img  class="screenshot" id="image" src="./images/club website.png" alt="club website" class="image">
+               <p>This is a static website built using html and css for the football team I play for.</p>
+            </div>
+            <div>
+              <img  class="screenshot" id="image" src="./images/under construction.png" alt="under construction sign" class="image">
+              <p>This is where a third project will be displayed</p>
+           </div>
+         </div>
+    <div>
+<!-- Blog section -->
+      <div id="blog">
+        <div> 
+          <h2>Blog</h2>
+        </div>
+        <div  class="blog" id="laos">
+          <p >31.1.24<br> We have spent 3 weeks in Laos and it has been amazing. We started on the slow boat from Huay Xai to Luang Prabeng, with an overnight stay in Pakbeng. We met some awesome people on the boat and will hopefully see some of them in 
+          Vietnam. Laos has really surprised us in terms of food and affordability. The baguettes are awesome and the curries are excellent (definitely try the buffalo curry in Pakbeng.)
+          </p>
+        </div>
+        <div class="blog" id="northThailand">
+          <p> 7.1.24 <br> We didn't get as much time in the North of Thailand as we would have liked. We took our time in the South and enjoyed Christmas there, but it meant we had 7 days to explore the north before our visas expired. </p>
+        </div>
       </div>
-      <div class="column">
-        <img  id="screenshot" src="./images/club website.png" alt="club website" class="image">
-          <p>This is a static website built using html and css for the football team I play for.</p>
-      </div>
-    </div>
 
-    
+
+      </div>
+
+      <div class="button">
+        <button type="button" id="button" onclick="revealMessage()"> Click here for more info</button> 
+        <p id="hiddenMessage" style="display: none;">I am still learning lots about web development and will keep on learning! </p>
+        
+        
+
+      </div>
+
+
+    <footer class="footer">
+      <div><p> &#169; Matthew Campbell 2024</p></div>
+
+
+    </footer>
 </body>
 </html>
