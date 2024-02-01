@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
-    color: seashell;
-    background-color: black;
+    color: black;
+    background-color: seashell;
     opacity: 0.9;
     text-align: center;
 }
@@ -11,14 +11,14 @@ body {
 header {
     text-align: left;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #303030;
     color: white;
     position: fixed;
     width: 100%;
     opacity: 1;
-    z-index: 2;
-    padding: 2rem;
+    z-index: 3;
+    height: 4rem;
 }
 
 ul {
@@ -28,7 +28,7 @@ ul {
     overflow: hidden;
     background-color: #303030;
     position: fixed;
-    top: 5rem;
+    top: 7rem;
     width: 100%;
     text-align: center;
       z-index: 2;
@@ -54,6 +54,7 @@ ul {
     color: black;
   }
 
+
   /* about me section */
   .aboutme {
     grid-area: about;
@@ -66,7 +67,7 @@ ul {
   }
 
   .about {
-    background-color: black;
+    background-color: seashell;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -80,10 +81,11 @@ ul {
     width: 15rem;
     height: auto;
     padding: 40% 10%;
+    border-radius: 50%;
   }
 
   .aboutme p {
-    color: white;
+    color: black;
     z-index: 1;
     align-self: center;
     justify-self: center;
@@ -103,6 +105,7 @@ ul {
   width: 300px;
   height: 200px;
   padding: 3rem;
+  border-radius: 20%;
 }
 
 
@@ -119,17 +122,48 @@ ul {
 #blog h2 {
   text-align: center;
   text-decoration: underline;
+  font-size: 23px;
 
 }
 #blog {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
+  font-size: 15px;
 }
 
 .blog {
   border: 1px dotted white;
   padding: 2rem;
   margin-top: 1rem;
+}
+
+/* contact from css */
+
+input[type=text] , textarea {
+  width: 100%; /* Full width */
+ 
+}
+
+input[type=submit] {
+  background-color: #303030;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.contactContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
 }
 
 /* Footer */
@@ -151,8 +185,12 @@ ul {
 
 /* button */
 .button {
-  padding: 2rem;
   display: flex;
   justify-content: center;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 3;
 }
-
