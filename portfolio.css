@@ -105,7 +105,7 @@ ul {
   width: 300px;
   height: 200px;
   padding: 3rem;
-  border-radius: 20%;
+ 
 }
 
 
@@ -166,24 +166,9 @@ input[type=submit]:hover {
   margin: auto;
 }
 
-/* Footer */
-
-.footer {
-  position: relative;
-  float: left;
-  font-size: 12px;
-  background-color: #fffffa;
-  color: black;
-  width: 100%;
-  margin: 0;
-  text-align: left;
-}
- 
-.footer p {
-  margin-left: 3rem;
-}
 
 /* button */
+
 .button {
   display: flex;
   justify-content: center;
@@ -193,4 +178,41 @@ input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
   line-height: 3;
+}
+/* Footer */
+
+.footer {
+  position: relative;
+  font-size: 12px;
+  background-color: #fffffa;
+  color: black;
+  width: 100%;
+  margin: 0;
+}
+ 
+.name {
+  margin-left: 3rem;
+  padding-top: 2rem;
+  padding-right: 20rem;
+  display: inline-block;
+}
+
+.socials {
+  display: inline-block;
+  padding: 1rem;
+}
+.fa {
+  
+  padding: 20px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+
 }
